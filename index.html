@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+   <div class="container-buttons">
+    <div class="box" id="all">ALL</div>
+    <div class="box" id="btnfamily">Family </div>
+    <div class="box" id="btnholiday">Holiday </div>
+    <div class="box" id="btnhoneymoon">honeymoon </div>
+    <div class="box" id="btnreligious">religious </div>
+    <div class="box" id="btnwinter">winter</div>
+   </div>
+    <div class="container-main">
+        <div class="container-sec" id="Family">
+            <div class="box">Family</div>
+            <div class="box">Family</div>
+            <div class="box">Family</div>
+            <div class="box">Family</div>
+        </div>
+        <div class="container-sec" id="Holiday">
+            <div class="box">holiday</div>
+            <div class="box">holiday</div>
+            <div class="box">holiday</div>
+            <div class="box">holiday</div>
+        </div>
+        <div class="container-sec" id="honeymoon">
+            <div class="box">honeymoon</div>
+            <div class="box">honeymoon</div>
+            <div class="box">honeymoon</div>
+            <div class="box">honeymoon</div>
+        </div>
+        <div class="container-sec" id="religious">
+            <div class="box">religious</div>
+            <div class="box">religious</div>
+            <div class="box">religious</div>
+            <div class="box">religious</div>
+        </div>
+        <div class="container-sec" id="winter">
+            <div class="box">winter</div>
+            <div class="box">winter</div>
+            <div class="box">winter</div>
+            <div class="box">winter</div>
+        </div>
+        
+    </div>
+    
+    <!-- java -->
+    <script>
+        var btnAll = document.querySelector('#all')
+var btnfamily = document.querySelector('#btnfamily')
+var btnholiday = document.querySelector('#btnholiday')
+var btnhoneymoon = document.querySelector('#btnhoneymoon')
+var btnreligious = document.querySelector('#btnreligious')
+var btnwinter = document.querySelector('#btnwinter')
+
+// contents
+var boxfamily = document.querySelector('#Family')
+var boxholiday = document.querySelector('#Holiday')
+var boxhoneymoon = document.querySelector('#honeymoon')
+var boxreligious = document.querySelector('#religious')
+var boxwinter = document.querySelector('#winter')
+
+btnfamily.addEventListener("click", function(){
+   console.log("ha ha")
+   boxholiday.style.display="none"
+   boxhoneymoon.style.display="none"
+   boxreligious.style.display="none"
+   boxwinter.style.display="none"
+   boxfamily.style.display="block"
+   boxfamily.style.display="flex"
+});
+btnholiday.addEventListener("click", function(){
+    boxfamily.style.display="none"
+   boxhoneymoon.style.display="none"
+   boxreligious.style.display="none"
+   boxwinter.style.display="none"
+   boxholiday.style.display="block"
+   boxholiday.style.display="flex"
+} )
+btnhoneymoon.addEventListener("click", function(){
+    boxfamily.style.display="none"
+   boxholiday.style.display="none"
+   boxreligious.style.display="none"
+   boxwinter.style.display="none"
+   boxhoneymoon.style.display="block"
+   boxhoneymoon.style.display="flex"
+} )
+btnreligious.addEventListener("click", function(){
+    boxfamily.style.display="none"
+   boxhoneymoon.style.display="none"
+   boxholiday.style.display="none"
+   boxwinter.style.display="none"
+   boxreligious.style.display="block"
+   boxreligious.style.display="flex"
+} )
+btnwinter.addEventListener("click", function(){
+    boxfamily.style.display="none"
+   boxhoneymoon.style.display="none"
+   boxreligious.style.display="none"
+   boxholiday.style.display="none"
+   boxwinter.style.display="block"
+   boxwinter.style.display="flex"
+} )
+btnAll.addEventListener("click", function(){
+    boxholiday.style.display="block"
+   boxhoneymoon.style.display="block"
+   boxreligious.style.display="block"
+   boxwinter.style.display="block"
+   boxholiday.style.display="flex"
+   boxhoneymoon.style.display="flex"
+   boxreligious.style.display="flex"
+   boxwinter.style.display="flex"
+} )
+    </script>
+</body>
+</html>
